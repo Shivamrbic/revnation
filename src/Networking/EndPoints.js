@@ -1,0 +1,37 @@
+const USER = {
+  USER: '/patient',
+  LOGIN: '/users/login',
+  SIGNUP: '/patient/register',
+  UPDATE: '/patient/update',
+  VERIFY_MOBILE: '/patient/verifyMobile',
+  ADD_DEPENDENTS: '/patient/dependents',
+  DELETE_DEPENDENT: '/patient/dependent/',
+  UPLOAD: '/patient/upload?belongsTo={0}&extension={1}&key={2}&purpose={3}',
+  TRANSACTION:
+    '/patient/transactionstransactions?status={0}&page_no={1}&record_limit={2}&start_date={3}&end_date={4}',
+  MEDICAL_INFO: '/patient/medical-info',
+  MEDICAL_INFO_ANSWERS: '/patient/medical-info-answers',
+  APPOINTMENT: '/patient/appointment',
+  APPOINTMENT_UPDATE: '/patient/appointment/{0}',
+  SPECIALITY: '/patient/speciality',
+  APPOINTMENT_DETAIL: '/patient/appointment/{0}',
+  FEEDBACK: '/patient/feedback',
+  PAYMENT: '/patient/payment',
+  LOGOUT: '/patient/logout/all',
+  HEALTH_TIPS: '/patient/health-tips',
+  HEALTH_TIPS_CATEGORIES: '/patient/health-tips-categories',
+  ADD_CARD: '/patient/card-details',
+  EMAIL_INVOICE: '/patient/email/invoice',
+  DEACTIVATE: '/patient/deactivate',
+  CHANGE_PASSWORD: '/patient/change-password',
+  FORGOT_PASSWORD: '/patient/forgot-password',
+  CALLBACK: '/patient/callback',
+  VERIFY_EMAIL: '/patient/verifyEmail',
+  CHANGE_PASSCODE: '/patient/change-passcode',
+  PRESCRITIONS: '/patient/prescriptions',
+  CONSENT: '/patient/consent',
+};
+
+module.exports = {
+  USER,
+};
