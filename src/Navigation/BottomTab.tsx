@@ -41,6 +41,10 @@ function BottomTab() {
         component={HomeScreen}
         options={{
           title: '',
+          headerShown: true,
+          headerStyle: {
+            backgroundColor: Colors.APP_ORANGE,
+          },
           tabBarIcon: ({focused, size, color}) => {
             return (
               <View style={{marginTop: 15}}>
@@ -70,6 +74,22 @@ function BottomTab() {
               </View>
             );
           },
+
+          headerLeft: () => (
+            <TouchableOpacity style={{marginLeft: 15, marginBottom: 10}}>
+              <View style={styles.iconContainer}>
+                <Arrow
+                  name="arrowleft"
+                  size={18}
+                  onPress={() => navigation.navigate('Home')}
+                />
+                <Image
+                  source={require('../Assets/Images/backArrow.png')}
+                  style={styles.unfocusedImage}
+                />
+              </View>
+            </TouchableOpacity>
+          ),
         }}
       />
       <Tab.Screen
@@ -79,6 +99,9 @@ function BottomTab() {
           title: '',
           headerShown: true,
           headerTitle: 'Attendance',
+          headerStyle: {
+            backgroundColor: Colors.APP_ORANGE,
+          },
 
           // headerLeft: () => (
           //   <TouchableOpacity style={{marginLeft: 15, marginBottom: 10}}>
